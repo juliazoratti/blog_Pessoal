@@ -47,5 +47,17 @@ public class UsuarioService {
 		
 		return null;
 	}
+	
+	/*public Optional<Usuario> CadastrarUsuario(Usuario usuario){
+		
+		if (repository.findByUsuario(usuario.getUsuario()).isPresent())
+			return null;
+		
+		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+		String senhaEncoder = encoder.encode(usuario.getSenha());
+		usuario.setSenha(senhaEncoder);
+		
+		return Optional.of(repository.save(usuario));
+	}*/
 
 }
