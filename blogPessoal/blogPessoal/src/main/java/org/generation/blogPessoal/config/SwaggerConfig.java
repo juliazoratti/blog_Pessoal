@@ -19,7 +19,7 @@ public class SwaggerConfig {
 	public Docket docket () {
 		return new Docket (DocumentationType.SWAGGER_2)
 				.select()
-				.apis (RequestHandlerSelectors.basePackage("generation.org.blogPessoal.controller"))
+				.apis (RequestHandlerSelectors.basePackage("org.generation.blogPessoal.controller"))
 				.paths(PathSelectors.any())
 				.build()
 				.apiInfo(apiInfo());
